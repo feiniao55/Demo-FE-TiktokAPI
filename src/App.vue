@@ -1,5 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import Login from './components/Login.vue'
+import Callback from './components/Callback.vue'
 </script>
 
 <template>
@@ -12,6 +14,10 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+
+  <p>--------</p>
+  <Login></Login>
+  <Callback />
 </template>
 
 <style scoped>
