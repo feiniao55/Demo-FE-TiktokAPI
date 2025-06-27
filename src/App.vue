@@ -1,6 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import Login from './components/Login.vue'
+import TwitterLogin from './components/TwitterLogin.vue';
 // import Callback from './components/Callback.vue'
 </script>
 
@@ -16,6 +17,7 @@ import Login from './components/Login.vue'
   <HelloWorld msg="Vite + Vue" />
 
   <Login></Login>
+  <TwitterLogin></TwitterLogin>
   <p>#####################################################----子页面----#####################################################</p>
   <!-- 
   <Callback /> -->
