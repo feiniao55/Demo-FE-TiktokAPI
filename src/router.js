@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
+
+import Callback from './components/Callback.vue';
 import TwitterCallback from './components/TwitterCallback.vue';
 
 const routes = [ 
   {
     path: '/api/auth/callback',
     name: 'Callback',
-    component: () => import('./pages/Callback.vue'),
+    component: Callback,
   },
   {
     path: '/twitter/callback',
