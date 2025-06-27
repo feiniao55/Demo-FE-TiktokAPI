@@ -8,8 +8,24 @@
 export default {
   methods: {
     loginWithTwitter() {
-      const url =
-        'https://x.com/i/oauth2/authorize?response_type=code&client_id=Vk5NNE9MZUdtblI0MFMwbkVNZlg6MTpjaQ&redirect_uri=https://feiniao.uk/twitter/callback?success=challenge&scope=tweet.read%20users.read%20follows.read%20follows.write&state=state';
+      const baseUrl = 'https://x.com/i/oauth2/authorize';
+      const params = {
+        response_type: 'code',
+        client_id: 'Vk5NNE9MZUdtblI0MFMwbkVNZlg6MTpjaQ',
+        redirect_uri: 'https://feiniao.uk/twitter/callback&success=challenge',
+        scope: 'tweet.read users.read follows.read follows.write',
+        state: 'state',
+      };
+      // 构建查询字符串
+      const query = new URLSearchParams({
+        response_type: params.response_type,
+        client_id: params.client_id,
+        redirect_uri: params.redirect_uri,
+        scope: params.scope,
+        state: params.state,
+      }).toString();
+      // 拼接最终URL
+      const url = `${baseUrl}?${query}`;
       window.location.href = url;
     },
   },
