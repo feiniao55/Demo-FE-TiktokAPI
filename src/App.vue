@@ -16,8 +16,10 @@ import Callback from './components/Callback.vue'
   <HelloWorld msg="Vite + Vue" />
 
   <p>--------</p>
-  <Login></Login>
-  <Callback />
+  <!-- <Login></Login>
+  <Callback /> -->
+    <!-- 路由出口，所有页面组件都通过路由展示 -->
+  <router-view />
 </template>
 
 <style scoped>
