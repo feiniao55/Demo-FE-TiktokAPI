@@ -1,7 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import Login from './components/Login.vue'
-import Callback from './components/Callback.vue'
+// import Callback from './components/Callback.vue'
 </script>
 
 <template>
@@ -15,8 +15,9 @@ import Callback from './components/Callback.vue'
   </div>
   <HelloWorld msg="Vite + Vue" />
 
-  <p>--------</p>
-  <!-- <Login></Login>
+  <Login></Login>
+  <p>#####################################################----子页面----#####################################################</p>
+  <!-- 
   <Callback /> -->
     <!-- 路由出口，所有页面组件都通过路由展示 -->
   <router-view />
