@@ -12,7 +12,7 @@ export default {
       const params = {
         response_type: 'code',
         client_id: 'Vk5NNE9MZUdtblI0MFMwbkVNZlg6MTpjaQ',
-        redirect_uri: 'https://feiniao.uk/twitter/callback&success=challenge',
+        redirect_uri: 'https://feiniao.uk/twitter/callback?success=challenge',
         scope: 'tweet.read users.read follows.read follows.write',
         state: 'state',
       };
